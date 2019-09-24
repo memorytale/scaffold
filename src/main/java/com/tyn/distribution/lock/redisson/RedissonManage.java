@@ -13,11 +13,13 @@ public class RedissonManage {
     private static final String REDIS_SERVER = "120.27.228.21:6379";
     private static final String REDIS_PASSWORD = "woaiwojia";
 
+
+
     @Bean
     public RedissonClient initRedisson() {
         Config config = new Config();
         config.useSingleServer().setAddress(REDIS_SERVER).setPassword(REDIS_PASSWORD);
-        RedissonClient redisson = Redisson.create();
+        RedissonClient redisson = Redisson.create(config);
         return redisson;
     }
 
