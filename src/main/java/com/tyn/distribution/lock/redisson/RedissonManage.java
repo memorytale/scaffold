@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class RedissonManage {
-    private static final String REDIS_SERVER = "120.27.228.21:6379";
+    private static final String REDIS_SERVER = "redis://120.27.228.21:6379";
     private static final String REDIS_PASSWORD = "woaiwojia";
 
 
